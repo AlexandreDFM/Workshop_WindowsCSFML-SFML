@@ -1,0 +1,22 @@
+
+                                                  DUCK HUNT
+
+Duck Hunt is a shooter game in which the objective is to shoot moving targets on the screen in mid-flight.
+The ducks will move faster each rounds.
+
+                                                  RULES
+
+Shoot 10 ducks to pass the round or you'll game over if you fail 3 hit, hit a duck is 100 pts.
+
+                                                  CONTROLS
+
+      - Click on the play bouton to start or exit bouton to exit.
+      - Once in game press escape to pause.
+      - If paused press space or click on the play bouton to resume, you can also click on the exit bouton to exit.
+      - If you Game Over you can press R to retry or Escape to close.
+      - Aim by moving your mouse and shoot the ducks with your left mouse button.
+
+                                                    CREDITS
+
+        - Game made by me (AlexandreDFM) with the help of the SFML library.
+        - Music by *** ()
