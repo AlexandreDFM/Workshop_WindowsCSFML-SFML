@@ -16,8 +16,10 @@ int game(game_t *hunter)
         }
         sfRenderWindow_clear(hunter->window, sfBlack);
         game_clock(hunter);
-        sfRenderWindow_drawSprite(hunter->window, hunter->backgrounds[1], NULL);
-        sfRenderWindow_drawSprite(hunter->window, hunter->backgrounds[0], NULL);
+        sfRenderWindow_drawSprite(hunter->window, hunter->backgrounds[BACKGROUND], NULL);
+        sfRenderWindow_drawSprite(hunter->window, hunter->backgrounds[FOREGROUND], NULL);
+        sfRenderWindow_drawSprite(hunter->window, hunter->backgrounds[BACK_LIFE], NULL);
+        sfRenderWindow_drawSprite(hunter->window, hunter->backgrounds[LIFE], NULL);
         cursor(hunter);
         display_ducks(hunter);
         click(hunter);

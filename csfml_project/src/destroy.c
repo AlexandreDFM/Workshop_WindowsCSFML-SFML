@@ -13,11 +13,6 @@ void destroy(game_t *hunter)
         sfSprite *sprite = node->data;
         sfSprite_destroy(sprite);
     }
-//    for (int i = 0; i < 2; i++) {
-//        sfTexture_destroy(hunter->textures[i]);
-//        sfSprite_destroy(hunter->backgrounds[i]);
-//    }
-//    sfTexture_destroy(hunter->textures[2]);
     sfSprite_destroy(hunter->cursor);
     sfRenderWindow_destroy(hunter->window);
     sfClock_destroy(hunter->clock);

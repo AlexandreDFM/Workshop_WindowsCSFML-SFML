@@ -24,12 +24,21 @@
 #define RESIZE_X 3.136
 #define RESIZE_Y 2.5
 
+enum interface_t {
+    BACKGROUND,
+    FOREGROUND,
+    LIFE,
+    BACK_LIFE,
+    MAX_INTERFACE
+};
+
 typedef struct linked_list {
     void *data;
     struct linked_list *next;
 } linked_list_t;
 
 typedef struct game {
+    int speed;
     int score_nb;
     sfText *score;
     sfEvent event;
@@ -40,7 +49,8 @@ typedef struct game {
     linked_list_t *ducks;
     sfRenderWindow *window;
     linked_list_t *textures;
-    sfSprite *backgrounds[4];
+    sfSprite *backgrounds[MAX_INTERFACE];
+    sfClock *animation_clock;
 } game_t;
 
 int game(game_t *hunter);

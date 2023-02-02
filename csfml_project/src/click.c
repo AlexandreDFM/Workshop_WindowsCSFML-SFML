@@ -27,14 +27,21 @@ void click(game_t *hunter)
         sfVector2i mouse_pos = sfMouse_getPositionRenderWindow(hunter->window);
         for (linked_list_t *node = hunter->ducks; node != NULL; node = node->next) {
             sfSprite *sprite = node->data;
-//            sfVector2f pos = sfSprite_getPosition(sprite);
             sfFloatRect rect = sfSprite_getGlobalBounds(sprite);
             if (sfFloatRect_contains(&rect, mouse_pos.x, mouse_pos.y)) {
                 sfSprite_setPosition(sprite, (sfVector2f){-68, 800});
                 sfSprite_setTextureRect(sprite, (sfIntRect){0, 0, 35, 42});
-                hunter->score_nb += 100;
+                hunter->score_nb += 100; hunter->speed += 1;
                 sfText_setString(hunter->score, my_itoa(hunter->score_nb));
                 sfSound_play(hunter->hit_sound);
+//                sfSprite_setTextureRect(hunter->backgrounds[LIFE], (sfIntRect){26, 0, 26, 17});
+            } else {
+//                sfIntRect shots = sfSprite_getTextureRect(hunter->backgrounds[LIFE]);
+//                printf("Shots: %d", shots.width);
+//                if (shots.width <= 0) {
+//                    sfRenderWindow_close(hunter->window); return;
+//                }
+//                sfSprite_setTextureRect(hunter->backgrounds[LIFE], (sfIntRect){26, 0, shots.width - 8, 17});
             }
         }
     }

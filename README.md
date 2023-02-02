@@ -53,8 +53,7 @@ x
 - CMake 3.17.3
 - Git 2.28.0
 - CSFML | SFML 2.5.1
-- MinGW 8.1.0
-- MinGW-w64 8.1.0
+- MinGW
 
 ### Downloads
 
@@ -64,5 +63,4 @@ x
 - [CMake](https://cmake.org/download/)
 - [Git](https://git-scm.com/downloads)
 - [CSFML | SFML](https://www.sfml-dev.org/download/csfml/)
-- [MinGW](https://sourceforge.net/projects/mingw-w64/files/mingw-builds/installer/mingw-w64-install.exe/download)
-- [MinGW-w64](https://sourceforge.net/projects/mingw-w64/files/mingw-builds/installer/mingw-w64-install.exe/download)
+- [MinGW](https://www.mingw-w64.org/downloads/)
